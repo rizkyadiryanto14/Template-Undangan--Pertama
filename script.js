@@ -49,7 +49,8 @@ function tryPlayMusic() {
   bgMusic.play().then(() => {
     isPlaying = true;
     musicButton.classList.add("playing");
-    musicButton.textContent = "♫";
+    musicButton.setAttribute("aria-label", "Pause musik");
+    musicButton.innerHTML = `<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>`;
   }).catch(() => {});
 }
 
@@ -57,7 +58,8 @@ function stopMusic() {
   bgMusic.pause();
   isPlaying = false;
   musicButton.classList.remove("playing");
-  musicButton.textContent = "♪";
+  musicButton.setAttribute("aria-label", "Putar musik");
+  musicButton.innerHTML = `<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></svg>`;
 }
 
 // ── COUNTDOWN ──

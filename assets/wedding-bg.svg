@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#fdfaf2"/>
+      <stop offset="100%" stop-color="#e8dcc8"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c4956a" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#c4956a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <ellipse cx="600" cy="390" rx="340" ry="270" fill="url(#glow)"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="612" cy="702" rx="200" ry="14" fill="#34291d" fill-opacity="0.06"/>
+
+  <!-- ══ FLORAL ARCH ══ -->
+  <!-- Main arch stem -->
+  <path d="M 432,480 Q 428,380 448,295 Q 465,228 498,185 Q 545,130 600,118 Q 655,130 702,185 Q 735,228 752,295 Q 772,380 768,480"
+        fill="none" stroke="#536057" stroke-width="4.5" stroke-opacity="0.32" stroke-linecap="round"/>
+
+  <!-- Left branch leaves -->
+  <g fill="#536057" fill-opacity="0.28">
+    <ellipse cx="450" cy="305" rx="20" ry="9" transform="rotate(-42 450 305)"/>
+    <ellipse cx="440" cy="348" rx="18" ry="8" transform="rotate(-56 440 348)"/>
+    <ellipse cx="435" cy="390" rx="20" ry="9" transform="rotate(-50 435 390)"/>
+    <ellipse cx="438" cy="428" rx="17" ry="8" transform="rotate(-36 438 428)"/>
+    <ellipse cx="463" cy="262" rx="16" ry="7" transform="rotate(-30 463 262)"/>
+    <ellipse cx="480" cy="222" rx="15" ry="7" transform="rotate(-18 480 222)"/>
+    <ellipse cx="503" cy="192" rx="14" ry="6" transform="rotate(-8 503 192)"/>
+  </g>
+  <!-- Right branch leaves -->
+  <g fill="#536057" fill-opacity="0.28">
+    <ellipse cx="750" cy="305" rx="20" ry="9" transform="rotate(42 750 305)"/>
+    <ellipse cx="760" cy="348" rx="18" ry="8" transform="rotate(56 760 348)"/>
+    <ellipse cx="765" cy="390" rx="20" ry="9" transform="rotate(50 765 390)"/>
+    <ellipse cx="762" cy="428" rx="17" ry="8" transform="rotate(36 762 428)"/>
+    <ellipse cx="737" cy="262" rx="16" ry="7" transform="rotate(30 737 262)"/>
+    <ellipse cx="720" cy="222" rx="15" ry="7" transform="rotate(18 720 222)"/>
+    <ellipse cx="697" cy="192" rx="14" ry="6" transform="rotate(8 697 192)"/>
+  </g>
+
+  <!-- Arch flowers — gold -->
+  <g fill="#b28a52" fill-opacity="0.52">
+    <!-- Left side -->
+    <circle cx="442" cy="294" r="11"/>
+    <circle cx="432" cy="336" r="10"/>
+    <circle cx="429" cy="375" r="11"/>
+    <circle cx="433" cy="415" r="9"/>
+    <circle cx="458" cy="250" r="10"/>
+    <!-- Top arch -->
+    <circle cx="516" cy="150" r="12"/>
+    <circle cx="555" cy="130" r="13"/>
+    <circle cx="600" cy="122" r="15"/>
+    <circle cx="645" cy="130" r="13"/>
+    <circle cx="684" cy="150" r="12"/>
+    <!-- Right side -->
+    <circle cx="758" cy="294" r="11"/>
+    <circle cx="768" cy="336" r="10"/>
+    <circle cx="771" cy="375" r="11"/>
+    <circle cx="767" cy="415" r="9"/>
+    <circle cx="742" cy="250" r="10"/>
+  </g>
+  <!-- Flower petal details -->
+  <g fill="#b28a52" fill-opacity="0.22">
+    <circle cx="600" cy="107" r="9"/>
+    <circle cx="618" cy="111" r="7"/>
+    <circle cx="582" cy="111" r="7"/>
+    <circle cx="610" cy="126" r="6"/>
+    <circle cx="590" cy="126" r="6"/>
+  </g>
+
+  <!-- ══ GROOM SILHOUETTE ══ -->
+  <g fill="#34291d" fill-opacity="0.26">
+    <!-- Head -->
+    <circle cx="568" cy="285" r="42"/>
+    <!-- Neck -->
+    <rect x="557" y="324" width="22" height="24" rx="4"/>
+    <!-- Jacket body (suit silhouette) -->
+    <path d="M 518,348 C 526,342 546,336 568,336 C 590,336 610,342 618,348 L 626,500 L 510,500 Z"/>
+    <!-- Lapels -->
+    <path d="M 540,348 L 560,400 L 566,348 Z" fill-opacity="0.4"/>
+    <path d="M 596,348 L 576,400 L 570,348 Z" fill-opacity="0.4"/>
+    <!-- Pants left -->
+    <rect x="516" y="498" width="44" height="192" rx="6"/>
+    <!-- Pants right -->
+    <rect x="566" y="498" width="44" height="192" rx="6"/>
+    <!-- Left shoe -->
+    <ellipse cx="538" cy="693" rx="32" ry="13"/>
+    <!-- Right shoe -->
+    <ellipse cx="588" cy="693" rx="32" ry="13"/>
+    <!-- Left arm (relaxed) -->
+    <path d="M 518,362 L 490,445 L 504,450 L 532,368 Z"/>
+    <!-- Right arm (toward bride) -->
+    <path d="M 618,362 L 644,428 L 655,422 L 629,355 Z"/>
+  </g>
+  <!-- Groom detail: tie -->
+  <path d="M 559,344 L 568,365 L 577,344 L 568,353 Z" fill="#34291d" fill-opacity="0.48"/>
+  <!-- Pocket square -->
+  <rect x="522" y="382" width="11" height="9" rx="2" fill="#b28a52" fill-opacity="0.35"/>
+
+  <!-- ══ BRIDE SILHOUETTE ══ -->
+  <!-- Wide A-line dress -->
+  <path d="M 636,382 C 634,380 650,376 666,376 C 682,376 698,380 696,382 L 772,692 L 556,692 Z"
+        fill="#34291d" fill-opacity="0.22"/>
+  <!-- Bodice -->
+  <path d="M 643,335 C 641,333 655,328 666,328 C 677,328 691,333 689,335 L 696,382 L 636,382 Z"
+        fill="#34291d" fill-opacity="0.26"/>
+  <!-- Head -->
+  <circle cx="666" cy="284" r="39" fill="#34291d" fill-opacity="0.26"/>
+  <!-- Left arm -->
+  <path d="M 636,350 L 607,430 L 619,435 L 648,357 Z" fill="#34291d" fill-opacity="0.24"/>
+  <!-- Right arm (bouquet) -->
+  <path d="M 689,352 L 718,400 L 728,393 L 700,345 Z" fill="#34291d" fill-opacity="0.24"/>
+
+  <!-- Veil flowing right -->
+  <path d="M 658,266 Q 704,242 757,258 Q 796,278 792,350 Q 785,424 760,476 Q 742,518 722,554"
+        fill="none" stroke="#34291d" stroke-width="3" stroke-opacity="0.18" stroke-linecap="round"/>
+  <path d="M 671,260 Q 724,230 782,242 Q 828,264 825,344 Q 818,428 792,485 Q 770,534 746,572"
+        fill="none" stroke="#34291d" stroke-width="2" stroke-opacity="0.12" stroke-linecap="round"/>
+
+  <!-- Dress fabric folds hint -->
+  <path d="M 654,400 L 630,692" fill="none" stroke="#34291d" stroke-width="1.5" stroke-opacity="0.1"/>
+  <path d="M 672,395 L 664,692" fill="none" stroke="#34291d" stroke-width="1.5" stroke-opacity="0.1"/>
+  <path d="M 690,400 L 706,692" fill="none" stroke="#34291d" stroke-width="1.5" stroke-opacity="0.1"/>
+
+  <!-- ══ BOUQUET ══ -->
+  <g opacity="0.58">
+    <!-- Stems -->
+    <path d="M 718,415 L 720,452 M 725,413 L 726,452 M 713,417 L 714,452"
+          fill="none" stroke="#536057" stroke-width="2.2" stroke-opacity="0.6" stroke-linecap="round"/>
+    <!-- Flowers -->
+    <circle cx="720" cy="397" r="15" fill="#b28a52"/>
+    <circle cx="737" cy="386" r="13" fill="#b28a52"/>
+    <circle cx="703" cy="388" r="13" fill="#b28a52"/>
+    <circle cx="728" cy="378" r="11" fill="#b28a52"/>
+    <circle cx="711" cy="380" r="11" fill="#b28a52"/>
+    <!-- Flower centers -->
+    <circle cx="720" cy="397" r="5" fill="#6b3a3a" fill-opacity="0.5"/>
+    <circle cx="737" cy="386" r="4" fill="#6b3a3a" fill-opacity="0.5"/>
+    <circle cx="703" cy="388" r="4" fill="#6b3a3a" fill-opacity="0.5"/>
+    <!-- Leaves -->
+    <ellipse cx="746" cy="404" rx="11" ry="5" fill="#536057" fill-opacity="0.6" transform="rotate(30 746 404)"/>
+    <ellipse cx="698" cy="403" rx="11" ry="5" fill="#536057" fill-opacity="0.6" transform="rotate(-35 698 403)"/>
+    <ellipse cx="722" cy="370" rx="9" ry="4" fill="#536057" fill-opacity="0.5" transform="rotate(10 722 370)"/>
+    <!-- Ribbon -->
+    <path d="M 714,452 Q 720,468 724,482 Q 728,468 730,452"
+          fill="none" stroke="#b28a52" stroke-width="3" stroke-opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- ══ SCATTERED PETALS ══ -->
+  <g fill="#b28a52" fill-opacity="0.18">
+    <ellipse cx="195" cy="185" rx="13" ry="5" transform="rotate(28 195 185)"/>
+    <ellipse cx="248" cy="310" rx="11" ry="4" transform="rotate(-18 248 310)"/>
+    <ellipse cx="170" cy="460" rx="12" ry="5" transform="rotate(42 170 460)"/>
+    <ellipse cx="295" cy="620" rx="10" ry="4" transform="rotate(-32 295 620)"/>
+    <ellipse cx="138" cy="590" rx="11" ry="4" transform="rotate(15 138 590)"/>
+    <ellipse cx="340" cy="730" rx="10" ry="4" transform="rotate(25 340 730)"/>
+    <ellipse cx="930" cy="178" rx="13" ry="5" transform="rotate(-28 930 178)"/>
+    <ellipse cx="975" cy="335" rx="11" ry="4" transform="rotate(22 975 335)"/>
+    <ellipse cx="1010" cy="520" rx="12" ry="5" transform="rotate(-38 1010 520)"/>
+    <ellipse cx="880" cy="640" rx="10" ry="4" transform="rotate(18 880 640)"/>
+    <ellipse cx="1055" cy="660" rx="11" ry="4" transform="rotate(-20 1055 660)"/>
+    <ellipse cx="840" cy="730" rx="10" ry="4" transform="rotate(30 840 730)"/>
+    <ellipse cx="410" cy="720" rx="10" ry="4" transform="rotate(-22 410 720)"/>
+  </g>
+
+  <!-- ══ CORNER DECORATIONS ══ -->
+  <!-- Top-left -->
+  <g fill="#b28a52" fill-opacity="0.22">
+    <circle cx="78" cy="72" r="32"/>
+    <circle cx="118" cy="54" r="23"/>
+    <circle cx="52" cy="116" r="23"/>
+    <circle cx="152" cy="90" r="18"/>
+    <circle cx="92" cy="150" r="18"/>
+  </g>
+  <g fill="#536057" fill-opacity="0.18">
+    <ellipse cx="58" cy="52" rx="42" ry="18" transform="rotate(-32 58 52)"/>
+    <ellipse cx="148" cy="36" rx="36" ry="15" transform="rotate(14 148 36)"/>
+    <ellipse cx="38" cy="148" rx="36" ry="15" transform="rotate(-46 38 148)"/>
+  </g>
+  <!-- Top-right -->
+  <g fill="#b28a52" fill-opacity="0.22">
+    <circle cx="1122" cy="72" r="32"/>
+    <circle cx="1082" cy="54" r="23"/>
+    <circle cx="1148" cy="116" r="23"/>
+    <circle cx="1048" cy="90" r="18"/>
+    <circle cx="1108" cy="150" r="18"/>
+  </g>
+  <g fill="#536057" fill-opacity="0.18">
+    <ellipse cx="1142" cy="52" rx="42" ry="18" transform="rotate(32 1142 52)"/>
+    <ellipse cx="1052" cy="36" rx="36" ry="15" transform="rotate(-14 1052 36)"/>
+    <ellipse cx="1162" cy="148" rx="36" ry="15" transform="rotate(46 1162 148)"/>
+  </g>
+  <!-- Bottom-left -->
+  <g fill="#b28a52" fill-opacity="0.22">
+    <circle cx="78" cy="728" r="30"/>
+    <circle cx="118" cy="752" r="22"/>
+    <circle cx="52" cy="684" r="22"/>
+    <circle cx="150" cy="712" r="17"/>
+    <circle cx="90" cy="758" r="16"/>
+  </g>
+  <g fill="#536057" fill-opacity="0.18">
+    <ellipse cx="58" cy="752" rx="40" ry="17" transform="rotate(32 58 752)"/>
+    <ellipse cx="148" cy="768" rx="34" ry="14" transform="rotate(-16 148 768)"/>
+  </g>
+  <!-- Bottom-right -->
+  <g fill="#b28a52" fill-opacity="0.22">
+    <circle cx="1122" cy="728" r="30"/>
+    <circle cx="1082" cy="752" r="22"/>
+    <circle cx="1148" cy="684" r="22"/>
+    <circle cx="1050" cy="712" r="17"/>
+    <circle cx="1110" cy="758" r="16"/>
+  </g>
+  <g fill="#536057" fill-opacity="0.18">
+    <ellipse cx="1142" cy="752" rx="40" ry="17" transform="rotate(-32 1142 752)"/>
+    <ellipse cx="1052" cy="768" rx="34" ry="14" transform="rotate(16 1052 768)"/>
+  </g>
+
+  <!-- Subtle border lines -->
+  <rect x="18" y="18" width="1164" height="764" fill="none" stroke="#b28a52" stroke-width="1" stroke-opacity="0.14"/>
+  <rect x="28" y="28" width="1144" height="744" fill="none" stroke="#b28a52" stroke-width="0.5" stroke-opacity="0.09"/>
+</svg>
