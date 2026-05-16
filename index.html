@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Undangan Pernikahan Melin & Yudi</title>
-  <meta name="description" content="Undangan pernikahan online Melin dan Yudi.">
+  <title>Undangan Pernikahan Yudi & Melinda</title>
+  <meta name="description" content="Undangan pernikahan online Yudi Saputra dan Melinda Tri.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Sacramento&display=swap" rel="stylesheet">
@@ -14,20 +14,13 @@
 
   <!-- ===== COVER ===== -->
   <div class="screen" id="cover">
-    <span class="corner corner-top-left" aria-hidden="true"></span>
-    <span class="corner corner-top-right" aria-hidden="true"></span>
-    <span class="corner corner-bottom-left" aria-hidden="true"></span>
-    <span class="corner corner-bottom-right" aria-hidden="true"></span>
-    <div class="cover-card">
-      <p class="hero-credit">Made with ♥ — Wardatul Jannah</p>
-      <p class="eyebrow">The Wedding Of</p>
-      <div class="cover-photo">
-        <img src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?auto=format&fit=crop&w=900&q=80" alt="Foto pasangan">
-      </div>
-      <h1>Melin & Yudi Saputra</h1>
+    <img class="cover-bg" src="assets/wedding-bg-melin.jpeg" alt="Undangan Pernikahan Yudi & Melinda">
+    <div class="cover-overlay">
+      <p class="eyebrow cover-eyebrow">Wedding Invitation</p>
+      <h1>Yudi & Melinda</h1>
       <div class="guest-box">
         <span>Kepada Yth. Bapak/Ibu/Saudara/i</span>
-        <strong>Nama Tamu</strong>
+        <strong id="guestNameDisplay">Tamu Undangan</strong>
       </div>
       <button class="primary-button" id="openInvitation" type="button">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
@@ -41,15 +34,17 @@
 
     <!-- HOME -->
     <section class="panel hero-section" id="home">
-      <span class="corner corner-top-left" aria-hidden="true"></span>
-      <span class="corner corner-top-right" aria-hidden="true"></span>
-      <span class="corner corner-bottom-left" aria-hidden="true"></span>
-      <span class="corner corner-bottom-right" aria-hidden="true"></span>
-      <div class="section-inner hero-inner">
-        <p class="eyebrow">Wedding Invitation</p>
-        <h2>Melin & Yudi Saputra</h2>
-        <p class="sub-date">Minggu, 22 Juni 2026</p>
-        <a href="#event" class="outline-button">Save The Date</a>
+      <img class="hero-bg" src="assets/welcoming.jpeg" alt="Yudi & Melinda">
+      <div class="hero-overlay">
+        <div class="hero-top-text">
+          <p class="eyebrow hero-eyebrow">The Wedding Of</p>
+          <h2>Yudi & Melinda</h2>
+          <p class="hero-date">—— 23 · 05 · 2026 ——</p>
+        </div>
+        <div class="hero-verse">
+          <p class="verse-text">"Nikahkanlah orang-orang yang masih membujang di antara kamu dan juga orang-orang yang layak (menikah) dari hamba-hamba sahayamu, baik laki-laki maupun perempuan. Jika mereka miskin, Allah akan memberi kemampuan kepada mereka dengan karunia-Nya."</p>
+          <span class="verse-ref">QS. An Nur : 32</span>
+        </div>
       </div>
     </section>
 
@@ -68,15 +63,15 @@
         <div class="bismillah">
           <img src="assets/bismillah.svg" alt="Bismillahirrahmanirrahim" onerror="this.style.display='none'">
         </div>
-        <p class="section-greeting">Assalamu'alaikum Wr. Wb.</p>
-        <p class="section-desc">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami.</p>
+        <p class="section-greeting">Assalamualaikum Warahmatullahi Wabarakatuh</p>
+        <p class="section-desc">Ya Allah, limpahkanlah rahmat, hidayah dan barokah-Mu pada pernikahan putra-putri kami. Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir menyaksikan dan mendoakan hari bahagia mereka.</p>
         <div class="couple-grid">
           <article class="person reveal">
             <div class="person-photo">
-              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80" alt="Foto Melin">
+              <img src="assets/yudi.jpeg" alt="Foto Yudi Saputra">
             </div>
-            <h3>Melin Anggraini</h3>
-            <p>Putri dari Bapak Ahmad<br>dan Ibu Siti Aminah</p>
+            <h3>Yudi Saputra</h3>
+            <p>Putra Bapak M. Amin (Alm)<br>& Ibu Siti Khadijah</p>
             <a href="https://instagram.com" target="_blank" rel="noreferrer" class="ig-link">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
               Instagram
@@ -85,10 +80,10 @@
           <div class="ampersand reveal">&</div>
           <article class="person reveal">
             <div class="person-photo">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Foto Yudi Saputra">
+              <img src="assets/melinda.jpeg" alt="Foto Melinda">
             </div>
-            <h3>Muhammad Yudi</h3>
-            <p>Putra dari Bapak Hasan<br>dan Ibu Nurhayati</p>
+            <h3>Melinda Tri</h3>
+            <p>Putri Bapak Nurdin Safar<br>& Ibu Satijah</p>
             <a href="https://instagram.com" target="_blank" rel="noreferrer" class="ig-link">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
               Instagram
@@ -99,13 +94,6 @@
     </section>
 
     <!-- VERSE -->
-    <section class="panel verse-section">
-      <div class="section-inner narrow">
-        <p class="verse-text">"Nikahkanlah orang-orang yang masih membujang di antara kamu dan juga orang-orang yang layak (menikah) dari hamba-hamba sahayamu, baik laki-laki maupun perempuan. Jika mereka miskin, Allah akan memberi kemampuan kepada mereka dengan karunia-Nya."</p>
-        <span class="verse-ref">QS. An Nur : 32</span>
-      </div>
-    </section>
-
     <!-- RIBBON: RANGKAIAN ACARA -->
     <div class="section-ribbon reveal-ribbon">
       <span class="ribbon-corner ribbon-corner-left" aria-hidden="true"></span>
@@ -119,31 +107,24 @@
     <section class="panel event-section" id="event">
       <div class="section-inner">
         <p class="eyebrow">Save The Date</p>
-        <div class="countdown reveal" data-date="2026-06-22T09:00:00+07:00">
+        <div class="countdown reveal" data-date="2026-05-23T20:00:00+08:00">
           <div><strong id="days">00</strong><span>Hari</span></div>
           <div><strong id="hours">00</strong><span>Jam</span></div>
           <div><strong id="minutes">00</strong><span>Menit</span></div>
           <div><strong id="seconds">00</strong><span>Detik</span></div>
         </div>
-        <div class="event-grid">
+        <div class="event-grid event-single">
           <article class="event-card reveal">
-            <h3>Akad Nikah</h3>
-            <p class="event-date">Minggu, 22 Juni 2026</p>
-            <p>08.00 WIB — selesai</p>
-            <span>Kediaman Mempelai Wanita</span>
-            <a class="outline-button compact" href="https://maps.google.com" target="_blank" rel="noreferrer">Lihat Lokasi</a>
-          </article>
-          <article class="event-card reveal">
-            <h3>Resepsi</h3>
-            <p class="event-date">Minggu, 22 Juni 2026</p>
-            <p>11.00 WIB — selesai</p>
-            <span>Gedung Serbaguna Melati</span>
-            <a class="outline-button compact" href="https://maps.google.com" target="_blank" rel="noreferrer">Lihat Lokasi</a>
+            <h3>Resepsi Pernikahan</h3>
+            <p class="event-date">Sabtu, 23 Mei 2026</p>
+            <p>20.00 WITA — Selesai</p>
+            <span>Lapangan Sampir A<br>Kel. Sampir, Kec. Taliwang<br>Kab. Sumbawa Barat (KSB)</span>
+            <a class="outline-button compact" href="https://maps.google.com/maps?q=Lapangan+Sampir+Bawah+Taliwang" target="_blank" rel="noreferrer">Lihat Lokasi</a>
           </article>
         </div>
         <div class="map-embed reveal">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15811.146505196873!2d110.3538906!3d-7.8123977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57b47a0746bd%3A0xbb34991698381051!2sUndangan%20Punakawan%20Digital!5e0!3m2!1sid!2sid!4v1726555413711!5m2!1sid!2sid"
-            width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.4663133900676!2d116.8543114!3d-8.7421186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc66e549c83059%3A0x2453495c3f72f9a8!2sLapangan%20Sampir%20Bawah%20Taliwang!5e0!3m2!1sid!2sid!4v1778914166722!5m2!1sid!2sid"
+            width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -159,14 +140,29 @@
 
     <!-- GALLERY -->
     <section class="panel gallery-section" id="gallery">
-      <div class="section-inner">
+      <div class="section-inner gallery-inner">
         <div class="gallery">
-          <img class="reveal" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Galeri 1">
-          <img class="reveal" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80" alt="Galeri 2">
-          <img class="reveal" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80" alt="Galeri 3">
-          <img class="reveal" src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=900&q=80" alt="Galeri 4">
-          <img class="reveal" src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=900&q=80" alt="Galeri 5">
-          <img class="reveal" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80" alt="Galeri 6">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-1.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-2.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-3.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-4.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-5.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-6.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-7.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-8.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-9.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-10.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-11.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="putih" src="assets/galery/putih-12.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-1.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-2.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-3.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-4.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-5.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-6.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-7.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-8.jpeg" loading="lazy" alt="Galeri">
+          <img class="gallery-item reveal" data-group="merah" src="assets/galery/merah-9.jpeg" loading="lazy" alt="Galeri">
         </div>
       </div>
     </section>
@@ -183,19 +179,19 @@
     <!-- GIFT -->
     <section class="panel gift-section">
       <div class="section-inner narrow">
-        <p class="section-desc">Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Jika ingin memberi hadiah secara cashless, berikut informasinya.</p>
+        <p class="section-desc">Doa restu Anda adalah hadiah terbesar bagi kami. Jika berkenan memberi amplop digital, berikut informasinya.</p>
         <div class="bank-card reveal">
           <div class="bank-logo">BCA</div>
           <div class="bank-chip" aria-hidden="true"></div>
           <strong class="bank-number">1234567890</strong>
-          <p>a.n. Melin Anggraini</p>
+          <p>a.n. Melinda Tri</p>
           <button class="outline-button compact" data-copy="1234567890" type="button">Salin Rekening</button>
         </div>
         <div class="bank-card reveal">
           <div class="bank-logo">Dana</div>
           <div class="bank-chip" aria-hidden="true"></div>
           <strong class="bank-number">0987654321</strong>
-          <p>a.n. Muhammad Yudi</p>
+          <p>a.n. Yudi Saputra</p>
           <button class="outline-button compact" data-copy="0987654321" type="button">Salin Rekening</button>
         </div>
       </div>
@@ -234,9 +230,11 @@
       <div class="gunungan-divider" aria-hidden="true">
         <img src="assets/Gunungan-Wood.png" alt="" onerror="this.style.display='none'">
       </div>
-      <p>Merupakan suatu kehormatan apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
-      <p class="footer-closing">Wassalamu'alaikum Wr. Wb.</p>
-      <strong>Melin & Yudi</strong>
+      <p>Atas kehadiran dan do'a restu Bapak/Ibu/Saudara/i kami ucapkan banyak terima kasih.</p>
+      <p class="footer-closing">Wassalamualaikum Warahmatullahi Wabarakatuh</p>
+      <strong>Yudi & Melinda</strong>
+      <p class="footer-families">Kami yang Berbahagia</p>
+      <p class="footer-family-names">Keluarga Besar Bapak M. Amin (Alm) & Ibu Siti Khadijah<br>Keluarga Besar Bapak Nurdin Safar & Ibu Satijah</p>
       <p class="footer-credit">Made with ♥ — Wardatul Jannah</p>
     </footer>
 

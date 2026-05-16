@@ -1,3 +1,11 @@
+// ── GUEST NAME FROM URL ──
+const urlParams = new URLSearchParams(window.location.search);
+const guestParam = urlParams.get("to") || urlParams.get("nama");
+const guestNameDisplay = document.getElementById("guestNameDisplay");
+if (guestParam && guestNameDisplay) {
+  guestNameDisplay.textContent = decodeURIComponent(guestParam);
+}
+
 const cover = document.getElementById("cover");
 const invitation = document.getElementById("invitation");
 const openButton = document.getElementById("openInvitation");
@@ -137,14 +145,44 @@ const defaultWishes = [
   { name: "Keluarga Besar", attendance: "Hadir", message: "Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Aamiin." }
 ];
 
+const WISHES_PER_PAGE = 5;
+let currentPage = 1;
+
 function renderWishes() {
   const all = [...storedWishes, ...defaultWishes];
-  wishes.innerHTML = all.map((w) => `
+  const totalPages = Math.max(1, Math.ceil(all.length / WISHES_PER_PAGE));
+  if (currentPage > totalPages) currentPage = totalPages;
+
+  const start = (currentPage - 1) * WISHES_PER_PAGE;
+  const pageItems = all.slice(start, start + WISHES_PER_PAGE);
+
+  const wishesHtml = pageItems.map((w) => `
     <article class="wish">
       <p class="wish-meta">${escapeHtml(w.name)} · <em>${escapeHtml(w.attendance)}</em></p>
       <p>${escapeHtml(w.message)}</p>
     </article>
   `).join("");
+
+  const paginationHtml = totalPages > 1 ? `
+    <div class="wishes-pagination">
+      <button class="wish-page-btn" id="prevPage" ${currentPage === 1 ? "disabled" : ""}>&#8592;</button>
+      <span class="wish-page-info">${currentPage} / ${totalPages}</span>
+      <button class="wish-page-btn" id="nextPage" ${currentPage === totalPages ? "disabled" : ""}>&#8594;</button>
+    </div>
+  ` : "";
+
+  wishes.innerHTML = wishesHtml + paginationHtml;
+
+  document.getElementById("prevPage")?.addEventListener("click", () => {
+    currentPage--;
+    renderWishes();
+    wishes.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+  document.getElementById("nextPage")?.addEventListener("click", () => {
+    currentPage++;
+    renderWishes();
+    wishes.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
 }
 
 rsvpForm.addEventListener("submit", (e) => {
@@ -154,8 +192,9 @@ rsvpForm.addEventListener("submit", (e) => {
     attendance: document.getElementById("attendance").value,
     message: document.getElementById("message").value
   });
-  localStorage.setItem("melin-rizky-wishes", JSON.stringify(storedWishes.slice(0, 10)));
+  localStorage.setItem("melin-rizky-wishes", JSON.stringify(storedWishes.slice(0, 50)));
   rsvpForm.reset();
+  currentPage = 1;
   renderWishes();
 });
 
@@ -180,3 +219,4 @@ async function copyText(v) {
 }
 
 renderWishes();
+
